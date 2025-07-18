@@ -1,0 +1,6 @@
+numpy
+flask
+torch
+ultralytics
+Pillow
+opencv-python
