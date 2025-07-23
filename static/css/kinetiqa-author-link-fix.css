@@ -1,0 +1,6 @@
+
+/* index.css patch to remove yellow hover animation for author names */
+.author-block a::after {
+  background-color: transparent !important;
+  content: none !important;
+}
