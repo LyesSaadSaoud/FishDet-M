@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="KINETIQA: Kinematic Integration Network with Enhanced Temporal Intelligence and Quality-driven Attention for Precise Joint Angle Prediction in Exoskeleton-based Gait Analysis">
+  <meta property="og:title" content="KINETIQA: Joint Angle Forecasting for Exoskeletons"/>
+  <meta property="og:description" content="Transformer-based model for accurate and robust knee joint angle prediction in real-time exoskeleton control."/>
+  <meta property="og:url" content="https://github.com/LyesSaadSaoud/KINETIQA/"/>
+  <meta property="og:image" content="static/images/banner.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:title" content="KINETIQA: Real-Time Knee Angle Prediction">
+  <meta name="twitter:description" content="KINETIQA combines Transformers, TCNs, and quality-driven attention for biomechanical forecasting.">
+  <meta name="twitter:image" content="static/images/banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="KINETIQA, exoskeleton, gait analysis, knee prediction, biomechanics, deep learning, transformers, IEEE Access">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KINETIQA: Precise Gait Forecasting</title>
+
+  <link rel="icon" type="image/x-icon" href="static/images/lyes_icon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+   ...
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/kinetiqa-author-link-fix.css"> <!-- <-- Add this -->
+
+
+</head>
+<body>
+
+
+<!-- Hero Section with Styled Title and Author Format -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <h1 class="title is-1 has-text-weight-bold">KINETIQA</h1>
+      <h2 class="subtitle is-4">Kinematic Integration Network with Enhanced Temporal Intelligence and Quality-driven Attention</h2>
+
+      <!-- Authors -->
+      <div class="is-size-5 publication-authors mt-3">
+        <span class="author-block">
+          <a href="https://saadsaoudlyes3.wixsite.com/robotvision" class="has-text-link" target="_blank">Lyes Saad Saoud</a>,
+        </span>
+        <span class="author-block">
+          <a href="https://www.linkedin.com/in/irf-hussain/" class="has-text-link" target="_blank">Irfan Hussain</a>
+        </span>
+      </div>
+
+      <!-- Affiliation -->
+      <div class="is-size-6 mt-1">
+        <span class="icon"><i class="fas fa-play"></i></span> Khalifa University, ARIC Center  
+       
+
+      <!-- Buttons -->
+      <div class="buttons is-centered mt-4">
+        <a class="button is-dark" href="https://arxiv.org/pdf/XXXX.XXXXX.pdf" target="_blank">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span><span>arXiv</span>
+        </a>
+        <a class="button is-dark" href="https://github.com/LyesSaadSaoud/KINETIQA" target="_blank">
+          <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+        </a>
+        <a class="button is-dark" href="https://github.com/LyesSaadSaoud/KINETIQA/releases" target="_blank">
+          <span class="icon">🤗</span><span>Checkpoints</span>
+        </a>
+        <a class="button is-dark" href="static/pdfs/supplementary_material.pdf" target="_blank">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Supplementary</span>
+        </a>
+        <a class="button is-dark" href="https://www.youtube.com/watch?v=XXXX" target="_blank">
+          <span class="icon"><i class="fab fa-youtube"></i></span><span>Video</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/KINETIQA.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Real-time knee joint angle prediction for exoskeleton-based gait rehabilitation.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present <strong>KINETIQA</strong>, a Transformer-based model tailored for real-time knee joint angle prediction in exoskeleton-assisted rehabilitation. It integrates temporal convolutions, recursive feature elimination, and quality-driven attention to enhance long-horizon gait forecasting while maintaining computational efficiency. KINETIQA significantly outperforms baselines like Transformer, TempoNet, LSTM, and FocalGatedNet, achieving over 20% MAPE reduction and demonstrating resilience to various sensor noise types including Gaussian, uniform, and salt-and-pepper noise. Inference latency remains under 25ms on RTX 4090 hardware, making it suitable for closed-loop biomechanical control in real-world settings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+         <img src="static/images/KINETIQA.png" alt="KINETIQA Architecture" style="width: 60%; height: auto; display: block; margin: auto;" />
+
+          <h2 class="subtitle has-text-centered">KINETIQA Model Architecture Overview</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/FeatureSelectionPlot.png" alt="Feature Selection Performance" style="width: 60%; height: auto; display: block; margin: auto;" />
+
+
+          <h2 class="subtitle has-text-centered">Feature Selection via Random Forest + RFECV</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/ImprovementKINETIQA.png" alt="MAE Improvements" style="width: 60%; height: auto; display: block; margin: auto;" />
+          <h2 class="subtitle has-text-centered">Relative Improvement in MAE Over Baselines</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BibTeX -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{saoud2025kinetiqa,
+  title={KINETIQA: Kinematic Integration Network with Enhanced Temporal Intelligence and Quality-driven Attention for Precise Joint Angle Prediction in Exoskeleton-based Gait Analysis},
+  author={Saad Saoud, Lyes and Hussain, Irfan},
+  journal={Submitted to IEEE Access},
+  year={2025},
+  note={Under review}
+}</code></pre>
+  </div>
+</section>
+
+<!-- Reproducibility Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Reproducibility Statement</h2>
+    <div class="content has-text-justified">
+      <p>
+        To ensure transparency and support future research, we have created a dedicated project webpage at
+        <a href="https://github.com/LyesSaadSaoud/KINETIQA/" target="_blank">https://github.com/LyesSaadSaoud/KINETIQA/</a>. The page provides comprehensive access to all resources required to reproduce our experiments, including:
+      </p>
+      <ul>
+        <li>Source code and trained model checkpoints</li>
+        <li>Visualization animations and result plots</li>
+        <li>Detailed step-by-step instructions for training and evaluation</li>
+        <li>Hardware and software environment details</li>
+        <li>Downloadable <code>requirements.txt</code> and configuration files</li>
+        <li>Input/output data formats and expected folder structures</li>
+      </ul>
+      <p>
+        All experiments were implemented using PyTorch 1.13.1 in PyCharm (Community Edition 2023.1) on a Windows 11 system with an NVIDIA RTX 4090 Ti GPU, CUDA 11.7, and cuDNN 8.6. Python version 3.10.9 was used, and environment setup was managed using <code>venv</code> and <code>pip</code>. While Docker was not used, the complete environment and setup instructions are thoroughly documented on the project page to ensure replicability.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>
