@@ -32,7 +32,8 @@
         <a href="https://saadsaoudlyes3.wixsite.com/robotvision" target="_blank">Lyes Saad Saoud</a>,
         <a href="https://www.linkedin.com/in/irf-hussain/" target="_blank">Irfan Hussain</a>
       </p>
-      <p class="is-size-6">Khalifa University, ARIC Center</p>
+      <p class="is-size-6">Khalifa University Center for Autonomous
+Robotic Systems (KUCARS), Abu Dhabi, United Arab Emirates</p>
 
       <div class="buttons is-centered mt-4">
         <a class="button is-dark" href="https://arxiv.org/pdf/XXXX.XXXXX.pdf" target="_blank">
@@ -47,6 +48,24 @@
         <a class="button is-dark" href="https://zenodo.org/record/XXXX" target="_blank">
           <span class="icon"><i class="fas fa-database"></i></span><span>Dataset</span>
         </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section hero is-light"> 
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">FishDet-M App Demo</h2>
+    <p class="subtitle is-5 has-text-centered mb-5">
+      Interactive walkthrough of the FishDet-M application showcasing annotation, detection, and dataset visualization capabilities.
+    </p>
+    <div class="columns is-centered">
+      <!-- Demo Video -->
+      <div class="column is-half has-text-centered">
+        <video controls width="100%">
+          <source src="static/videos/fishdetm_app_demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="mt-2">Live demonstration of FishDet-M's core functionalities.</p>
       </div>
     </div>
   </div>
@@ -91,12 +110,16 @@
 
 <section class="section">
   <div class="container">
-    <h2 class="title is-3">Detection Metrics Across 13 Datasets</h2>
-    <figure class="image is-3by2">
-      <img src="static/images/fishdetm_results.png" alt="Detection Results">
+    <h2 class="title is-3">Detection Performance Across 28 Models</h2>
+    <figure class="image">
+      <img src="static/images/fishdetm_results_grid.png" alt="Detection Results Grid">
+      <figcaption class="has-text-centered mt-2">
+        Detection results from 28 models on four challenging underwater images. Each row shows GT followed by YOLOv8–v12, YNAS, DETR variants, R-CNN family, RetinaNet, FCOS, and MobileNetV2-SSD. Scenarios include camouflaged fish, occlusion, and low-contrast schools.
+      </figcaption>
     </figure>
   </div>
 </section>
+
 
 <section class="section" id="BibTeX">
   <div class="container content">
