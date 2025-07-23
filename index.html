@@ -2,22 +2,22 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="KINETIQA: Kinematic Integration Network with Enhanced Temporal Intelligence and Quality-driven Attention for Precise Joint Angle Prediction in Exoskeleton-based Gait Analysis">
-  <meta property="og:title" content="KINETIQA: Joint Angle Forecasting for Exoskeletons"/>
-  <meta property="og:description" content="Transformer-based model for accurate and robust knee joint angle prediction in real-time exoskeleton control."/>
-  <meta property="og:url" content="https://github.com/LyesSaadSaoud/KINETIQA/"/>
-  <meta property="og:image" content="static/images/banner.png" />
+  <meta name="description" content="FishDet-M: A Unified Large-Scale Benchmark for Robust Fish Detection and CLIP-Guided Model Selection in Diverse Aquatic Visual Domains">
+  <meta property="og:title" content="FishDet-M: Benchmark for Aquatic Fish Detection"/>
+  <meta property="og:description" content="Comprehensive fish detection benchmark combining 13 datasets, with CLIP-guided model selection and state-of-the-art model evaluations."/>
+  <meta property="og:url" content="https://github.com/LyesSaadSaoud/FishDet-M/"/>
+  <meta property="og:image" content="static/images/banner_fishdetm.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-  <meta name="twitter:title" content="KINETIQA: Real-Time Knee Angle Prediction">
-  <meta name="twitter:description" content="KINETIQA combines Transformers, TCNs, and quality-driven attention for biomechanical forecasting.">
-  <meta name="twitter:image" content="static/images/banner.png">
+  <meta name="twitter:title" content="FishDet-M: Large-Scale Underwater Fish Detection Benchmark">
+  <meta name="twitter:description" content="FishDet-M provides unified evaluation across 13 aquatic datasets and supports robust detection through CLIP-based model selection.">
+  <meta name="twitter:image" content="static/images/banner_fishdetm.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="KINETIQA, exoskeleton, gait analysis, knee prediction, biomechanics, deep learning, transformers, IEEE Access">
+  <meta name="keywords" content="FishDet-M, fish detection, underwater dataset, aquatic detection, CLIP, YOLO, benchmark, IEEE, marine AI">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KINETIQA: Precise Gait Forecasting</title>
+  <title>FishDet-M: Robust Aquatic Detection Benchmark</title>
 
-  <link rel="icon" type="image/x-icon" href="static/images/lyes_icon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/fishdetm_icon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -27,52 +27,39 @@
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
-   ...
-  <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="static/css/kinetiqa-author-link-fix.css"> <!-- <-- Add this -->
-
-
 </head>
+
 <body>
-
-
-<!-- Hero Section with Styled Title and Author Format -->
+<!-- Hero Section -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
-      <h1 class="title is-1 has-text-weight-bold">KINETIQA</h1>
-      <h2 class="subtitle is-4">Kinematic Integration Network with Enhanced Temporal Intelligence and Quality-driven Attention</h2>
-
-      <!-- Authors -->
+      <h1 class="title is-1 has-text-weight-bold">FishDet-M</h1>
+      <h2 class="subtitle is-4">A Unified Benchmark for Underwater Fish Detection with CLIP-Guided Model Selection</h2>
       <div class="is-size-5 publication-authors mt-3">
         <span class="author-block">
           <a href="https://saadsaoudlyes3.wixsite.com/robotvision" class="has-text-link" target="_blank">Lyes Saad Saoud</a>,
         </span>
         <span class="author-block">
+          Muayad Abujabal,
+        </span>
+        <span class="author-block">
           <a href="https://www.linkedin.com/in/irf-hussain/" class="has-text-link" target="_blank">Irfan Hussain</a>
         </span>
       </div>
-
-      <!-- Affiliation -->
       <div class="is-size-6 mt-1">
-        <span class="icon"><i class="fas fa-play"></i></span> Khalifa University, ARIC Center  
-       
-
-      <!-- Buttons -->
+        <span class="icon"><i class="fas fa-fish"></i></span> Khalifa University, ARIC Center
+      </div>
       <div class="buttons is-centered mt-4">
         <a class="button is-dark" href="https://arxiv.org/pdf/XXXX.XXXXX.pdf" target="_blank">
           <span class="icon"><i class="fas fa-file-pdf"></i></span><span>arXiv</span>
         </a>
-        <a class="button is-dark" href="https://github.com/LyesSaadSaoud/KINETIQA" target="_blank">
+        <a class="button is-dark" href="https://github.com/LyesSaadSaoud/FishDet-M" target="_blank">
           <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
-        </a>
-        <a class="button is-dark" href="https://github.com/LyesSaadSaoud/KINETIQA/releases" target="_blank">
-          <span class="icon">🤗</span><span>Checkpoints</span>
         </a>
         <a class="button is-dark" href="static/pdfs/supplementary_material.pdf" target="_blank">
           <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Supplementary</span>
@@ -85,15 +72,15 @@
   </div>
 </section>
 
-<!-- Teaser video -->
+<!-- Teaser -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/KINETIQA.mp4" type="video/mp4">
+      <video poster="" id="teaser" autoplay controls muted loop height="100%">
+        <source src="static/videos/fishdetm_teaser.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Real-time knee joint angle prediction for exoskeleton-based gait rehabilitation.
+        Real-world marine datasets unified under one benchmark.
       </h2>
     </div>
   </div>
@@ -107,7 +94,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present <strong>KINETIQA</strong>, a Transformer-based model tailored for real-time knee joint angle prediction in exoskeleton-assisted rehabilitation. It integrates temporal convolutions, recursive feature elimination, and quality-driven attention to enhance long-horizon gait forecasting while maintaining computational efficiency. KINETIQA significantly outperforms baselines like Transformer, TempoNet, LSTM, and FocalGatedNet, achieving over 20% MAPE reduction and demonstrating resilience to various sensor noise types including Gaussian, uniform, and salt-and-pepper noise. Inference latency remains under 25ms on RTX 4090 hardware, making it suitable for closed-loop biomechanical control in real-world settings.
+            We introduce <strong>FishDet-M</strong>, the first unified benchmark for underwater fish detection, integrating 13 heterogeneous datasets into a common COCO format. FishDet-M supports robust model evaluation across diverse aquatic conditions and includes CLIP-based semantic guidance for model selection. We benchmark 28 state-of-the-art models, demonstrating the consistent superiority of the YOLOv12 family, particularly YOLO12x, in accuracy and speed. The benchmark enables reproducibility and paves the way for real-time marine monitoring, aquaculture automation, and underwater conservation.
           </p>
         </div>
       </div>
@@ -115,25 +102,22 @@
   </div>
 </section>
 
-<!-- Image carousel -->
+<!-- Carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
-         <img src="static/images/KINETIQA.png" alt="KINETIQA Architecture" style="width: 60%; height: auto; display: block; margin: auto;" />
-
-          <h2 class="subtitle has-text-centered">KINETIQA Model Architecture Overview</h2>
+          <img src="static/images/FishDetM_Overview.png" alt="FishDet-M Overview" style="width: 60%; height: auto; display: block; margin: auto;" />
+          <h2 class="subtitle has-text-centered">FishDet-M Integration and Architecture</h2>
         </div>
         <div class="item">
-          <img src="static/images/FeatureSelectionPlot.png" alt="Feature Selection Performance" style="width: 60%; height: auto; display: block; margin: auto;" />
-
-
-          <h2 class="subtitle has-text-centered">Feature Selection via Random Forest + RFECV</h2>
+          <img src="static/images/clip_guidance.png" alt="CLIP-guided Selection" style="width: 60%; height: auto; display: block; margin: auto;" />
+          <h2 class="subtitle has-text-centered">CLIP-Guided YOLO Model Selection</h2>
         </div>
         <div class="item">
-          <img src="static/images/ImprovementKINETIQA.png" alt="MAE Improvements" style="width: 60%; height: auto; display: block; margin: auto;" />
-          <h2 class="subtitle has-text-centered">Relative Improvement in MAE Over Baselines</h2>
+          <img src="static/images/DetectionBenchmarkResults.png" alt="Detection Results" style="width: 60%; height: auto; display: block; margin: auto;" />
+          <h2 class="subtitle has-text-centered">Detection Metrics Across 13 Datasets</h2>
         </div>
       </div>
     </div>
@@ -144,41 +128,35 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{saoud2025kinetiqa,
-  title={KINETIQA: Kinematic Integration Network with Enhanced Temporal Intelligence and Quality-driven Attention for Precise Joint Angle Prediction in Exoskeleton-based Gait Analysis},
-  author={Saad Saoud, Lyes and Hussain, Irfan},
-  journal={Submitted to IEEE Access},
+    <pre><code>@article{saoud2025fishdetm,
+  title={FishDet-M: A Unified Large-Scale Benchmark for Robust Fish Detection and CLIP-Guided Model Selection in Diverse Aquatic Visual Domains},
+  author={Saad Saoud, Lyes and Abujabal, Muayad and Hussain, Irfan},
+  journal={Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence},
   year={2025},
   note={Under review}
 }</code></pre>
   </div>
 </section>
 
-<!-- Reproducibility Section -->
+<!-- Reproducibility -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Reproducibility Statement</h2>
+    <h2 class="title is-3">Reproducibility and Resources</h2>
     <div class="content has-text-justified">
       <p>
-        To ensure transparency and support future research, we have created a dedicated project webpage at
-        <a href="https://github.com/LyesSaadSaoud/KINETIQA/" target="_blank">https://github.com/LyesSaadSaoud/KINETIQA/</a>. The page provides comprehensive access to all resources required to reproduce our experiments, including:
+        Visit our GitHub repository at
+        <a href="https://github.com/LyesSaadSaoud/FishDet-M/" target="_blank">FishDet-M GitHub</a> for access to code, models, evaluation scripts, and dataset documentation.
       </p>
       <ul>
-        <li>Source code and trained model checkpoints</li>
-        <li>Visualization animations and result plots</li>
-        <li>Detailed step-by-step instructions for training and evaluation</li>
-        <li>Hardware and software environment details</li>
-        <li>Downloadable <code>requirements.txt</code> and configuration files</li>
-        <li>Input/output data formats and expected folder structures</li>
+        <li>Standardized COCO-format annotations for 13 underwater datasets</li>
+        <li>28 model weights with consistent evaluation configuration</li>
+        <li>CLIP-based inference script for dynamic model selection</li>
+        <li>Supplementary material and training logs</li>
+        <li>Support for integration into PyTorch and MMDetection</li>
       </ul>
-      <p>
-        All experiments were implemented using PyTorch 1.13.1 in PyCharm (Community Edition 2023.1) on a Windows 11 system with an NVIDIA RTX 4090 Ti GPU, CUDA 11.7, and cuDNN 8.6. Python version 3.10.9 was used, and environment setup was managed using <code>venv</code> and <code>pip</code>. While Docker was not used, the complete environment and setup instructions are thoroughly documented on the project page to ensure replicability.
-      </p>
     </div>
   </div>
 </section>
-
-
 
 </body>
 </html>
