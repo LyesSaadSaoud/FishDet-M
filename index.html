@@ -1,160 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="FishDet-M: A Unified Large-Scale Benchmark for Robust Fish Detection and CLIP-Guided Model Selection in Diverse Aquatic Visual Domains">
-  <meta property="og:title" content="FishDet-M: Benchmark for Aquatic Fish Detection"/>
-  <meta property="og:description" content="Comprehensive fish detection benchmark combining 13 datasets, with CLIP-guided model selection and state-of-the-art model evaluations."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FishDet-M: A Benchmark for Underwater Fish Detection with CLIP-Guided Model Selection">
+  <meta property="og:title" content="FishDet-M: Benchmark for Underwater Fish Detection"/>
+  <meta property="og:description" content="A unified benchmark for robust fish detection across diverse marine domains with CLIP-based model selection."/>
   <meta property="og:url" content="https://github.com/LyesSaadSaoud/FishDet-M/"/>
-  <meta property="og:image" content="static/images/banner_fishdetm.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-  <meta name="twitter:title" content="FishDet-M: Large-Scale Underwater Fish Detection Benchmark">
-  <meta name="twitter:description" content="FishDet-M provides unified evaluation across 13 aquatic datasets and supports robust detection through CLIP-based model selection.">
+  <meta property="og:image" content="static/images/banner_fishdetm.png"/>
+  <meta name="twitter:title" content="FishDet-M: CLIP-Guided Fish Detection Benchmark">
+  <meta name="twitter:description" content="FishDet-M unifies 13 datasets, benchmarks 28 models, and includes CLIP-guided semantic model selection.">
   <meta name="twitter:image" content="static/images/banner_fishdetm.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="FishDet-M, fish detection, underwater dataset, aquatic detection, CLIP, YOLO, benchmark, IEEE, marine AI">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FishDet-M: Robust Aquatic Detection Benchmark</title>
+  <meta name="keywords" content="FishDet-M, fish detection, underwater benchmark, CLIP model selection, marine monitoring">
+  <title>FishDet-M: Robust Marine Detection Benchmark</title>
 
-  <link rel="icon" type="image/x-icon" href="static/images/fishdetm_icon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/fish_icon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
 </head>
-
 <body>
-<!-- Hero Section -->
-<section class="hero">
+
+<section class="hero is-primary is-bold">
   <div class="hero-body">
-    <div class="container is-max-desktop has-text-centered">
-      <h1 class="title is-1 has-text-weight-bold">FishDet-M</h1>
+    <div class="container has-text-centered">
+      <h1 class="title is-1">FishDet-M</h1>
       <h2 class="subtitle is-4">A Unified Benchmark for Underwater Fish Detection with CLIP-Guided Model Selection</h2>
-      <div class="is-size-5 publication-authors mt-3">
-        <span class="author-block">
-          <a href="https://saadsaoudlyes3.wixsite.com/robotvision" class="has-text-link" target="_blank">Lyes Saad Saoud</a>,
-        </span>
-        <span class="author-block">
-          Muayad Abujabal,
-        </span>
-        <span class="author-block">
-          <a href="https://www.linkedin.com/in/irf-hussain/" class="has-text-link" target="_blank">Irfan Hussain</a>
-        </span>
-      </div>
-      <div class="is-size-6 mt-1">
-        <span class="icon"><i class="fas fa-fish"></i></span> Khalifa University, ARIC Center
-      </div>
+      <p class="is-size-5 mt-2">
+        <a href="https://www.linkedin.com/in/muayyad-abujabal/" target="_blank">Muayyad Abujabal</a>,
+        <a href="https://saadsaoudlyes3.wixsite.com/robotvision" target="_blank">Lyes Saad Saoud</a>,
+        <a href="https://www.linkedin.com/in/irf-hussain/" target="_blank">Irfan Hussain</a>
+      </p>
+      <p class="is-size-6">Khalifa University, ARIC Center</p>
+
       <div class="buttons is-centered mt-4">
         <a class="button is-dark" href="https://arxiv.org/pdf/XXXX.XXXXX.pdf" target="_blank">
-          <span class="icon"><i class="fas fa-file-pdf"></i></span><span>arXiv</span>
+          <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
         </a>
         <a class="button is-dark" href="https://github.com/LyesSaadSaoud/FishDet-M" target="_blank">
           <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
         </a>
-        <a class="button is-dark" href="static/pdfs/supplementary_material.pdf" target="_blank">
-          <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Supplementary</span>
+        <a class="button is-dark" href="https://fishdetm-app.demo.com" target="_blank">
+          <span class="icon"><i class="fas fa-robot"></i></span><span>FishDet-M App</span>
         </a>
-        <a class="button is-dark" href="https://www.youtube.com/watch?v=XXXX" target="_blank">
-          <span class="icon"><i class="fab fa-youtube"></i></span><span>Video</span>
+        <a class="button is-dark" href="https://zenodo.org/record/XXXX" target="_blank">
+          <span class="icon"><i class="fas fa-database"></i></span><span>Dataset</span>
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Teaser -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="teaser" autoplay controls muted loop height="100%">
-        <source src="static/videos/fishdetm_teaser.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Real-world marine datasets unified under one benchmark.
-      </h2>
-    </div>
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3">Abstract</h2>
+    <p class="content has-text-justified">
+      <strong>FishDet-M</strong> introduces the first unified benchmark for underwater fish detection, combining 13 real-world datasets into a standardized COCO format. It supports robust model evaluation across varying aquatic environments and incorporates CLIP-based semantic guidance for intelligent model selection. The benchmark includes 28 state-of-the-art models, highlighting the superior performance of the YOLOv12 family, especially YOLO12x. FishDet-M enables reproducible research and paves the way for real-time marine monitoring, aquaculture automation, and underwater ecological analysis.
+    </p>
   </div>
 </section>
 
-<!-- Abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We introduce <strong>FishDet-M</strong>, the first unified benchmark for underwater fish detection, integrating 13 heterogeneous datasets into a common COCO format. FishDet-M supports robust model evaluation across diverse aquatic conditions and includes CLIP-based semantic guidance for model selection. We benchmark 28 state-of-the-art models, demonstrating the consistent superiority of the YOLOv12 family, particularly YOLO12x, in accuracy and speed. The benchmark enables reproducibility and paves the way for real-time marine monitoring, aquaculture automation, and underwater conservation.
-          </p>
-        </div>
-      </div>
-    </div>
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3">FishDet-M Integration and Architecture</h2>
+    <figure class="image is-3by2">
+      <img src="static/images/fishdetm_architecture.png" alt="FishDet-M Overview">
+    </figure>
   </div>
 </section>
 
-<!-- Carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <img src="static/images/FishDetM_Overview.png" alt="FishDet-M Overview" style="width: 60%; height: auto; display: block; margin: auto;" />
-          <h2 class="subtitle has-text-centered">FishDet-M Integration and Architecture</h2>
-        </div>
-        <div class="item">
-          <img src="static/images/clip_guidance.png" alt="CLIP-guided Selection" style="width: 60%; height: auto; display: block; margin: auto;" />
-          <h2 class="subtitle has-text-centered">CLIP-Guided YOLO Model Selection</h2>
-        </div>
-        <div class="item">
-          <img src="static/images/DetectionBenchmarkResults.png" alt="Detection Results" style="width: 60%; height: auto; display: block; margin: auto;" />
-          <h2 class="subtitle has-text-centered">Detection Metrics Across 13 Datasets</h2>
-        </div>
-      </div>
-    </div>
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3">CLIP-Guided YOLO Model Selection</h2>
+    <figure class="image is-3by2">
+      <img src="static/images/fishdetm_clip_selection.png" alt="CLIP-guided Selection">
+    </figure>
   </div>
 </section>
 
-<!-- BibTeX -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3">Detection Metrics Across 13 Datasets</h2>
+    <figure class="image is-3by2">
+      <img src="static/images/fishdetm_results.png" alt="Detection Results">
+    </figure>
+  </div>
+</section>
+
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
+  <div class="container content">
+    <h2 class="title is-3">BibTeX</h2>
     <pre><code>@article{saoud2025fishdetm,
   title={FishDet-M: A Unified Large-Scale Benchmark for Robust Fish Detection and CLIP-Guided Model Selection in Diverse Aquatic Visual Domains},
-  author={Saad Saoud, Lyes and Abujabal, Muayad and Hussain, Irfan},
+  author={Saad Saoud, Lyes and Abujabal, Muayyad and Hussain, Irfan},
   journal={Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence},
   year={2025},
   note={Under review}
 }</code></pre>
-  </div>
-</section>
-
-<!-- Reproducibility -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Reproducibility and Resources</h2>
-    <div class="content has-text-justified">
-      <p>
-        Visit our GitHub repository at
-        <a href="https://github.com/LyesSaadSaoud/FishDet-M/" target="_blank">FishDet-M GitHub</a> for access to code, models, evaluation scripts, and dataset documentation.
-      </p>
-      <ul>
-        <li>Standardized COCO-format annotations for 13 underwater datasets</li>
-        <li>28 model weights with consistent evaluation configuration</li>
-        <li>CLIP-based inference script for dynamic model selection</li>
-        <li>Supplementary material and training logs</li>
-        <li>Support for integration into PyTorch and MMDetection</li>
-      </ul>
-    </div>
   </div>
 </section>
 
